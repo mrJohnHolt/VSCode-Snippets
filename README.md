@@ -20,16 +20,16 @@ Version 1.0.0 VSCode Snippets for DaVinci Resolve
 Key combination{"l" followed by "Tab"}
 Result = Basic code for a label.
 '''
-{"l" "tab"} = inspector (input) Label
-{"nl" "tab"} = node (tool) Label
-{"nol" "tab"} = inspector (input) Note
-{"nn" "tab"} = node (tool) Note
-{"rl" "tab"} = inspector (input) Range Tool
-{"ra" "tab"} = node (tool) Minimum and Maximum Range
-{"crl" "tab"} = inspector (input) Row of 3 Checkboxes
-{"cr" "tab"} = node (tool) Row of 3 Checkboxes
-{"btl" "tab"} = inspector (input) MultiButton
-{"bt "tab"} = node (tool) Template for 4 Buttons as a MultiButton
+-{"l" "tab"} = inspector (input) Label
+-{"nl" "tab"} = node (tool) Label
+-{"nol" "tab"} = inspector (input) Note
+-{"nn" "tab"} = node (tool) Note
+-{"rl" "tab"} = inspector (input) Range Tool
+-{"ra" "tab"} = node (tool) Minimum and Maximum Range
+-{"crl" "tab"} = inspector (input) Row of 3 Checkboxes
+-{"cr" "tab"} = node (tool) Row of 3 Checkboxes
+-{"btl" "tab"} = inspector (input) MultiButton
+-{"bt "tab"} = node (tool) Template for 4 Buttons as a MultiButton
 {"ls" "tab} = inspector (input) Slider
 {"bs" "tab"} = node (tool) Slider
 {"ms" "tab"} = inspector (input) Mix Slider
