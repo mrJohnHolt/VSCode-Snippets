@@ -31,7 +31,8 @@
                 "INP_External = false,",
                 "INPID_InputControl = \"LabelControl\",",
                 "LINKS_Name = \"Label$1\",",
-                "},"
+                "},",
+                "$0"
         ],
         "description": "Node Label"
     },
@@ -39,13 +40,13 @@
     "NotesLabel": {
         "prefix": "nol",
         "body": [
-            "-- This code is for a label in the inspector",
             "CleverText = InstanceInput { --Enter Label Number",
             "SourceOp = \"VC1\", --The Node Name the Label is in",
             "Source = \"CleverText\", --Same as Label",
             "Name = \"Notes\", -- Label Name",
             "Page = \"Controls\", --Inspector Page",
             "},",
+            "$0"
         ],
         "description": "NotesLabel"
     },
@@ -62,7 +63,7 @@
             "TEC_Lines = 2,",
             "INPS_DefaultText = \"A fragment of a very clever text\"..\"\\n\"..\"extending to two lines\",",
             "},",
-            ""
+            "$0"
         ],
         "description": "NodeNotes"
     },
@@ -76,7 +77,8 @@
             "SourceOp = \"${1:SourceOp}\",",
             "Source = \"RangeMinimum\",",
             "},",
-            "-- end of Range label instance"
+            "$0"
+
         ],
         "description": "Range Label"
     },
@@ -112,7 +114,7 @@
             "RNGCD_HighOuterLength = \"0.1\",",
             "INP_Default = 1,",
             "},",
-            "--End Range Control"
+            "$0"
         ],
         "description": "Range"
     },
@@ -120,12 +122,11 @@
     "CheckBox Row Label": {
         "prefix": "crl",
         "body": [
-            "-- CheckBox Row Label",
             "Checkbox${2:Num} = InstanceInput {",
             "SourceOp = \"${1:SourceOP}\",",
             "Source = \"Checkbox${3:Num}\",",
             "},",
-            "-- end CheckBox Row Label"
+            "$0"
         ],
         "description": "CheckBox Row Label"
     },
@@ -158,7 +159,7 @@
             "INP_External = false,",
             "INP_Passive = false,",
             "},",
-            "--End Checkbox Row No Keyframes"
+            "$0"
         ],
         "description": "Checkbox 3 Row"
     },
@@ -166,12 +167,11 @@
     "Buttons Label": {
         "prefix": "btl",
         "body": [
-            "-- Buttons Label in resolve = combobox unless forced",
             "Buttons = InstanceInput {",
-            "SourceOp = \"${1:SurceOp}\",",
+            "SourceOp = \"${1:SourceOp}\",",
             "Source = \"Buttons\",",
             "},",
-            "-- end Buttons Label in resolve = combobox unless forced"
+            "$0"
         ],
         "description": "Buttons Label"
     },
@@ -179,7 +179,6 @@
     "Buttons": {
         "prefix": "bt",
         "body": [
-            "--Button Controls",
             "Buttons = {",
             "LINKID_DataType = \"Number\",",
             "INPID_InputControl = \"MultiButtonControl\",",
@@ -196,7 +195,7 @@
             "MBTNC_ForceButtons = true,",
             "INP_Default = 0,",
             "},",
-            "--End Button Controls"
+            "$0"
         ],
         "description": "Buttons"
     },
@@ -219,7 +218,6 @@
     "BeautifulSlider": {
         "prefix": "bs",
         "body": [
-            "--SliderControl",
             "BeautifulSlider = {",
             "LINKID_DataType = \"Number\",",
             "NP_Integer = true,",
@@ -231,7 +229,7 @@
             "ICD_Center = 1,",
             "INP_Default = 1,",
             "},",
-            "--End Of BeautifulSlider"
+            "$0"
         ],
         "description": "BeautifulSlider"
     },
@@ -244,11 +242,8 @@
             "SourceOp = \"${1:Node Name}\", --The Node Name the Label is in",
             "Source = \"MixSlider\", --Same as InstanceInput",
             "},",
-            "-- end of the label",
-            "$0",
-            "",
-            "",
-            ""
+            
+            "$0"
         ],
         "description": "LabelSlider"
     },
@@ -256,7 +251,6 @@
     "MixSlider": {
         "prefix": "mxs",
         "body": [
-            "--Mix Slider Template",
             "Global01 = {",
             "LINKID_DataType = \"Number\",",
             "NP_Integer = true,",
@@ -270,7 +264,7 @@
             "SLCS_LowName = \"Start\",",
             "SLCS_HighName = \"End\",",
             "},",
-            "--End Of MixSlider"
+            "$0"
         ],
         "description": "MixSlider"
     },
