@@ -19,7 +19,7 @@ As an example to add a drop down menu (label) to the inspector you a required to
 Version 1.0.0 VSCode Snippets for DaVinci Resolve
 Key combination{"l" followed by "Tab"}
 Result = Basic code for a label.
-
+'''
 {"l" "tab"} = inspector (input) Label
 {"nl" "tab"} = node (tool) Label
 {"nol" "tab"} = inspector (input) Note
@@ -47,3 +47,4 @@ Result = Basic code for a label.
 {"com" "tab"} = node (tool) add a user comment
 {"lbtn" "tab"} = inspector (input) preset button
 {"pbtn" "tab"} = node (tool) preset button
+'''
