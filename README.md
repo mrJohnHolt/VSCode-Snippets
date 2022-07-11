@@ -4,8 +4,6 @@ Davinci Resolve Development
 
 This is the GitHub repository for the new 2022 Resolve Development.
 
-There is no point in re-inventing the wheel or re-discovering fire, using VS Code Snippets for developing Macros, Fuses and Scripts for DaVinci resolve will save hours of coding.
-
 A Snippet in VS Code is a shorthand keyword or letter combination followed by pressing the tab key, this will then insert the appropriate snippet. Please read more about creating snippets here to further understand their use. https://code.visualstudio.com/docs/editor/userdefinedsnippets
 
 DaVinci Resolve .setting files are written in lua a fast, human readable programing language. In a Macro there are several sections to the code.
