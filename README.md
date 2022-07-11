@@ -6,7 +6,7 @@ This is the GitHub repository for the new 2022 Resolve Development.
 
 A Snippet in VS Code is a shorthand keyword or letter combination followed by pressing the tab key, this will then insert the appropriate snippet. Please read more about creating snippets here to further understand their use. https://code.visualstudio.com/docs/editor/userdefinedsnippets
 
-Copy the snippets into your lua,json settings inside VSCode.
+Copy the snippets into your lua.json settings inside VSCode.
 
 DaVinci Resolve .setting files are written in lua a fast, human readable programing language. In a Macro there are several sections to the code.
 
