@@ -18,8 +18,8 @@ The code snippet is the basic working code to get you going, think of it as a te
 
 As an example to add a drop down menu (label) to the inspector you a required to add code in both the input section of the code and the tool section of the code.
 
-Version 1.0.0 VSCode Snippets for DaVinci Resolve
-Key combination{"l" followed by "Tab"}
+Version 1.0.0 VSCode Snippets for DaVinci Resolve  
+Key combination{"l" followed by "Tab"}  
 Result = Basic code for a label.
 
 {"l" "tab"} = inspector (input) Label  
