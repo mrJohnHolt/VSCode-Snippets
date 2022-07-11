@@ -1,4 +1,4 @@
-# DaVinci-Resolve
+# VSCode Snippets
 
 Davinci Resolve Development
 
