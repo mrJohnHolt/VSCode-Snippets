@@ -10,9 +10,9 @@ Copy the snippets into your lua.json settings inside VSCode.
 
 DaVinci Resolve .setting files are written in lua a fast, human readable programing language. In a Macro there are several sections to the code.
 
-Inputs, these are the controls you see in the inspector
-Outputs, this is usually the last node in the node tree before the MediaOut node.
-Tools, these are the actual nodes
+Inputs, these are the controls you see in the inspector.  
+Outputs, this is usually the last node in the node tree before the MediaOut node.  
+Tools, these are the actual nodes.
 
 The code snippet is the basic working code to get you going, think of it as a template, the cursor will be located where a user input is required and tab will move to the next input required.
 
