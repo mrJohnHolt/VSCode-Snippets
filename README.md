@@ -50,3 +50,6 @@ Result = Basic code for a label.
 {"com" "tab"} = node (tool) add a user comment  
 {"lbtn" "tab"} = inspector (input) preset button  
 {"pbtn" "tab"} = node (tool) preset button
+
+Individual Lines of code added  
+{"bw" "tab"} = node (tool) button width

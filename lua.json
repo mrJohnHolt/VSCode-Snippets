@@ -575,7 +575,7 @@
     ],
     "description": "Controls Center"
 },
-"Controls Defailt": {
+"Controls Default": {
     "prefix": "cd",
     "body": [
         "INP_Default = 1,",
