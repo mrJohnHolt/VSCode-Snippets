@@ -8,7 +8,7 @@
         "body": [
             
             "Label$1 = InstanceInput { ",
-                "SourceOp = \"Background1\", ",
+                "SourceOp = \"M1\", ",
                 "Source = \"Label$1\", ",
                 "Name = \"${2:Name}\", ",
                 "Page = \"${3:Controls}\", ",
@@ -31,8 +31,7 @@
                 "INP_External = false,",
                 "INPID_InputControl = \"LabelControl\",",
                 "LINKS_Name = \"Label$1\",",
-                "},",
-                "$0"
+                "},"
         ],
         "description": "Node Label"
     },
@@ -40,13 +39,13 @@
     "NotesLabel": {
         "prefix": "nol",
         "body": [
+            "-- This code is for a label in the inspector",
             "CleverText = InstanceInput { --Enter Label Number",
-            "SourceOp = \"VC1\", --The Node Name the Label is in",
+            "SourceOp = \"D2\", --The Node Name the Label is in",
             "Source = \"CleverText\", --Same as Label",
             "Name = \"Notes\", -- Label Name",
             "Page = \"Controls\", --Inspector Page",
             "},",
-            "$0"
         ],
         "description": "NotesLabel"
     },
@@ -63,7 +62,7 @@
             "TEC_Lines = 2,",
             "INPS_DefaultText = \"A fragment of a very clever text\"..\"\\n\"..\"extending to two lines\",",
             "},",
-            "$0"
+            ""
         ],
         "description": "NodeNotes"
     },
@@ -77,8 +76,7 @@
             "SourceOp = \"${1:SourceOp}\",",
             "Source = \"RangeMinimum\",",
             "},",
-            "$0"
-
+            "-- end of Range label instance"
         ],
         "description": "Range Label"
     },
@@ -114,7 +112,7 @@
             "RNGCD_HighOuterLength = \"0.1\",",
             "INP_Default = 1,",
             "},",
-            "$0"
+            "--End Range Control"
         ],
         "description": "Range"
     },
@@ -122,11 +120,12 @@
     "CheckBox Row Label": {
         "prefix": "crl",
         "body": [
+            "-- CheckBox Row Label",
             "Checkbox${2:Num} = InstanceInput {",
             "SourceOp = \"${1:SourceOP}\",",
             "Source = \"Checkbox${3:Num}\",",
             "},",
-            "$0"
+            "-- end CheckBox Row Label"
         ],
         "description": "CheckBox Row Label"
     },
@@ -159,7 +158,7 @@
             "INP_External = false,",
             "INP_Passive = false,",
             "},",
-            "$0"
+            "--End Checkbox Row No Keyframes"
         ],
         "description": "Checkbox 3 Row"
     },
@@ -167,11 +166,12 @@
     "Buttons Label": {
         "prefix": "btl",
         "body": [
+            "-- Buttons Label in resolve = combobox unless forced",
             "Buttons = InstanceInput {",
             "SourceOp = \"${1:SourceOp}\",",
             "Source = \"Buttons\",",
             "},",
-            "$0"
+            "-- end Buttons Label in resolve = combobox unless forced"
         ],
         "description": "Buttons Label"
     },
@@ -179,6 +179,7 @@
     "Buttons": {
         "prefix": "bt",
         "body": [
+            "--Button Controls",
             "Buttons = {",
             "LINKID_DataType = \"Number\",",
             "INPID_InputControl = \"MultiButtonControl\",",
@@ -195,7 +196,7 @@
             "MBTNC_ForceButtons = true,",
             "INP_Default = 0,",
             "},",
-            "$0"
+            "--End Button Controls"
         ],
         "description": "Buttons"
     },
@@ -218,6 +219,7 @@
     "BeautifulSlider": {
         "prefix": "bs",
         "body": [
+            "--SliderControl",
             "BeautifulSlider = {",
             "LINKID_DataType = \"Number\",",
             "NP_Integer = true,",
@@ -229,7 +231,7 @@
             "ICD_Center = 1,",
             "INP_Default = 1,",
             "},",
-            "$0"
+            "--End Of BeautifulSlider"
         ],
         "description": "BeautifulSlider"
     },
@@ -242,8 +244,11 @@
             "SourceOp = \"${1:Node Name}\", --The Node Name the Label is in",
             "Source = \"MixSlider\", --Same as InstanceInput",
             "},",
-            
-            "$0"
+            "-- end of the label",
+            "$0",
+            "",
+            "",
+            ""
         ],
         "description": "LabelSlider"
     },
@@ -251,6 +256,7 @@
     "MixSlider": {
         "prefix": "mxs",
         "body": [
+            "--Mix Slider Template",
             "Global01 = {",
             "LINKID_DataType = \"Number\",",
             "NP_Integer = true,",
@@ -264,7 +270,7 @@
             "SLCS_LowName = \"Start\",",
             "SLCS_HighName = \"End\",",
             "},",
-            "$0"
+            "--End Of MixSlider"
         ],
         "description": "MixSlider"
     },
@@ -311,7 +317,7 @@
         ],
         "description": "Custom Data"
     },
-    // Example of Styled Text within UserContols
+    // Example of Styled Text within UserControls
     "UserControl": {
         "prefix": "ucs",
         "body": [
@@ -504,14 +510,90 @@
     "prefix": "lbtn",
     "body": [
         "Preset$1 = InstanceInput { ",
-        "SourceOp = \"Background1\", ",
+        "SourceOp = \"M1\", ",
         "Source = \"Preset$1\", ",
         "Name = \"${2:Name}\", ",
-        "Page = \"PreSets\", ",
+        "Page = \"Controls\", ",
         "},",
         "$0"
     ],
     "description": "Preset Label"
+},
+"Width Node": {
+    "prefix": "nwidth",
+    "body": [
+        "--line to add width to a control which goes in the user controls section",
+        "ICD_Width = 0.5,"
+    ],
+    "description": "Width Node"
+},
+"IndependentLabel": {
+    "prefix": "il",
+    "body": [
+        "IndependentLabel = {",
+        "INPID_InputControl = \"LabelControl\",",
+        "IC_ControlPage = 0,",
+        "LINKS_Name = \"Independent Label\",",
+        "},"
+    ],
+    "description": "IndependentLabel"
+},
+"Control Group": {
+    "prefix": "cg",
+    "body": [
+        "IC_ControlGroup = $,"
+    ],
+    "description": "Control Group"
+},
+"Control ID": {
+    "prefix": "cid",
+    "body": [
+        "--IC_ControlID is for the 'piece' that you're looking at: 0 for Low, 1 for High.",
+        "--IC_ControlGroup defines a different control. So you'll have two ControlGroups, each with ControlID 0 and 1.",
+        "IC_ControlID = 0,",
+        ""
+    ],
+    "description": "Control ID"
+},
+"MinScale": {
+    "prefix": "mins",
+    "body": [
+        "INP_MinScale = -1,",
+        ""
+    ],
+    "description": "MinScale"
+},
+"MaxScale": {
+    "prefix": "maxs",
+    "body": [
+        "INP_MaxScale = 5,",
+        ""
+    ],
+    "description": "MaxScale"
+},
+"Controls Center": {
+    "prefix": "cs",
+    "body": [
+        "ICD_Center = 1,",
+        ""
+    ],
+    "description": "Controls Center"
+},
+"Controls Defailt": {
+    "prefix": "cd",
+    "body": [
+        "INP_Default = 1,",
+        ""
+    ],
+    "description": "Controls Default"
+},
+"Button Width": {
+    "prefix": "bw",
+    "body": [
+        "MBTNCD_ButtonWidth = ${1|1,0.5,0.25,0.33,0.1|}",
+        ""
+    ],
+    "description": "Button Width"
 }
 }
 
