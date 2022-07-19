@@ -52,4 +52,12 @@ Result = Basic code for a label.
 {"pbtn" "tab"} = node (tool) preset button
 
 Individual Lines of code added  
-{"bw" "tab"} = node (tool) button width
+{"bw" "tab"} = node (tool) button width  
+{"cd" "tab"} = node (tool) control default  
+{"cds" "tab"} = node (tool) control center value  
+{"mins" "tab"} = node (tool) minimum value on control  
+{"maxs" "tab"} = node (tool) maximum value on control  
+{"cid" "tab"} = node (tool) is for the 'piece' that you're looking at: 0 for Low, 1 for High  
+{"cg" "tab"} = node (tool) defines a different control. So you'll have two ControlGroups, each with ControlID 0 and 1.
+{"il" "tab"} = node (tool) independent label  
+{"nwidth" "tab"} = node (tool) line to add width to a control which goes in the user controls section
