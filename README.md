@@ -61,3 +61,5 @@ Individual Lines of code added
 {"cg" "tab"} = node (tool) defines a different control. So you'll have two ControlGroups, each with ControlID 0 and 1.
 {"il" "tab"} = node (tool) independent label  
 {"nwidth" "tab"} = node (tool) line to add width to a control which goes in the user controls section
+{"ol" "tab"} = node (tool) add to node with label in to keep open by default  
+{"sa" "tab"} = BTNCS_Execute (tool) set the attribute
