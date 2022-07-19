@@ -51,7 +51,8 @@ Result = Basic code for a label.
 {"lbtn" "tab"} = inspector (input) preset button  
 {"pbtn" "tab"} = node (tool) preset button
 
-Individual Lines of code added  
+## Individual Lines of code added
+
 {"bw" "tab"} = node (tool) button width  
 {"cd" "tab"} = node (tool) control default  
 {"cds" "tab"} = node (tool) control center value  
