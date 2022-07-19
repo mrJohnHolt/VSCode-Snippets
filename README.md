@@ -64,4 +64,5 @@ Result = Basic code for a label.
 {"nwidth" "tab"} = node (tool) line to add width to a control which goes in the user controls section
 {"ol" "tab"} = node (tool) add to node with label in to keep open by default  
 {"sa" "tab"} = BTNCS_Execute (tool) set the attribute
-{"sa" "tab"} = BTNCS_Execute (tool) set the attribute
+{"hc" "tab"} = BTNCS_Execute (tool) hide control
+{"sc" "tab"} = BTNCS_Execute (tool) show control
