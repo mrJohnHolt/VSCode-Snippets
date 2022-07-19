@@ -605,6 +605,24 @@
     "BTNCS_Execute = \"${1:Input00}:SetAttrs({TOOLB_PassThrough = true})\","
   ],
   "description": "Set Attribute"
+},
+"Hide Control": {
+  "prefix": "hc",
+  "body": [
+    "-- used in a button execute to set hide tool.",
+    "BTNCS_Execute = \"${1:Input00}:SetAttrs({INPB_IC_Visible = false})\",",
+    ""
+  ],
+  "description": "Hide Control"
+},
+"Show Control": {
+  "prefix": "sc",
+  "body": [
+    "-- used in a button execute to set show tool.",
+    "BTNCS_Execute = \"tool.Gain:SetAttrs({INPB_IC_Visible = true})\"",
+    ""
+  ],
+  "description": "Show Control"
 }
 }
 
