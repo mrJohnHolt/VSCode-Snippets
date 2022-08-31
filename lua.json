@@ -1,38 +1,33 @@
 {
-    
     "Inspector Label": {
         "prefix": "l",
         "body": [
-            
             "Label$1 = InstanceInput { ",
                 "SourceOp = \"M1\", ",
                 "Source = \"Label$1\", ",
                 "Name = \"${2:Name}\", ",
                 "Page = \"${3:Controls}\", ",
                 "},",
-           
-            "$0"
+                "$0"
         ],
         "description": "Inspector Label"
     },
     "Node Label": {
         "prefix": "nl",
         "body": [
-            
             "Label$1 = {",
-                "INP_Integer = false,",
-                "LBLC_DropDownButton = true,",
-                "LINKID_DataType = \"Number\",",
-                "LBLC_NumInputs = $2,",
-                "INP_Passive = true,",
-                "INP_External = false,",
-                "INPID_InputControl = \"LabelControl\",",
-                "LINKS_Name = \"Label$1\",",
-                "},"
+            "INP_Integer = false,",
+            "LBLC_DropDownButton = true,",
+            "LINKID_DataType = \"Number\",",
+            "LBLC_NumInputs = $2,",
+            "INP_Passive = true,",
+            "INP_External = false,",
+            "INPID_InputControl = \"LabelControl\",",
+            "LINKS_Name = \"Label$1\",",
+            "},"
         ],
         "description": "Node Label"
     },
-   
     "NotesLabel": {
         "prefix": "nol",
         "body": [
@@ -46,7 +41,6 @@
         ],
         "description": "NotesLabel"
     },
-    
     "NodeNotes": {
         "prefix": "nn",
         "body": [
@@ -63,7 +57,6 @@
         ],
         "description": "NodeNotes"
     },
-    
     "Range Label": {
         "prefix": "rl",
         "body": [
@@ -76,7 +69,6 @@
         ],
         "description": "Range Label"
     },
-    
     "Range": {
         "prefix": "ra",
         "body": [
@@ -112,7 +104,6 @@
         ],
         "description": "Range"
     },
-    
     "CheckBox Row Label": {
         "prefix": "crl",
         "body": [
@@ -125,7 +116,6 @@
         ],
         "description": "CheckBox Row Label"
     },
-    
     "Checkbox 3 Row": {
         "prefix": "cr",
         "body": [
@@ -158,7 +148,6 @@
         ],
         "description": "Checkbox 3 Row"
     },
-   
     "Buttons Label": {
         "prefix": "btl",
         "body": [
@@ -171,7 +160,6 @@
         ],
         "description": "Buttons Label"
     },
-   
     "Buttons": {
         "prefix": "bt",
         "body": [
@@ -196,7 +184,6 @@
         ],
         "description": "Buttons"
     },
-    
     "LabelSlider": {
         "prefix": "ls",
         "body": [
@@ -211,7 +198,6 @@
         ],
         "description": "LabelSlider"
     },
-    
     "BeautifulSlider": {
         "prefix": "bs",
         "body": [
@@ -231,7 +217,6 @@
         ],
         "description": "BeautifulSlider"
     },
-    
     "LabelMixSlider": {
         "prefix": "ms",
         "body": [
@@ -248,7 +233,6 @@
         ],
         "description": "LabelSlider"
     },
-    
     "MixSlider": {
         "prefix": "mxs",
         "body": [
@@ -270,7 +254,6 @@
         ],
         "description": "MixSlider"
     },
-    
     "LabelTriStateCheckbox": {
         "prefix": "ltc",
         "body": [
@@ -284,7 +267,6 @@
         ],
         "description": "LabelTriStateCheckbox"
     },
-    
     "CheckBox TriState": {
         "prefix": "cb",
         "body": [
@@ -301,7 +283,6 @@
         ],
         "description": "CheckBox TriState"
     },
-   
     "Custom Data": {
         "prefix": "cd",
         "body": [
@@ -313,7 +294,6 @@
         ],
         "description": "Custom Data"
     },
-   
     "UserControl": {
         "prefix": "ucs",
         "body": [
@@ -347,7 +327,7 @@
             "LINKID_DataType = \"Text\", ",
             "TEC_Wrap = false, ",
             "INPID_InputControl = \"TextEditControl\", ",
-            "TEC_Lines = 1, ",
+            "TEC_Lines = 2, ",
             "LINKS_Name = \"Main Text\", ",
             "INPS_DefaultText = \"PlaceHolder\",",
             "INP_External = false,",
@@ -358,7 +338,6 @@
         ],
         "description": "Styled Text Modifier"
     },
-    
     "UserControls": {
         "prefix": "uc",
         "body": [
@@ -378,9 +357,265 @@
         ],
         "description": "Version Comments"
     },
-    
-
-"UserControlStyled": {
+    "UserControlStyled": {
+        "prefix": "us",
+        "body": [
+            "UserControls = ordered() {",
+            "--StyleText Box Modifier",
+            "StyledText = {",
+            "TEC_ReadOnly = false, ",
+            "ICS_ControlPage = \"Controls\", ",
+            "LINKID_DataType = \"Text\", ",
+            "TEC_Wrap = false, ",
+            "INPID_InputControl = \"TextEditControl\", ",
+            "TEC_Lines = 1, ",
+            "LINKS_Name = \"Job Role\", ",
+            "INPS_DefaultText = \"PlaceHolder\",",
+            "INP_External = false,",
+            "INP_Passive = false,",
+            "ICD_Width = 1.0,",
+            "}, }"
+        ],
+        "description": "UserControlStyled"
+    },
+    "Page": {
+        "prefix": "p",
+        "body": [
+            "Page = \"${1:enter page}\","
+        ],
+        "description": "Page"
+    },
+    "Name": {
+        "prefix": "n",
+        "body": [
+            "Name = \"${1:Enter Name}\","
+        ],
+        "description": "Name"
+    },
+    "Website Node": {
+        "prefix": "nbtn",
+        "body": [
+            "ScriptButton = {",
+            "ICD_Width = 1,",
+            "LINKS_Name = \"ScriptButton\",",
+            "LINKID_DataType = \"Number\",",
+            "INPID_InputControl = \"ButtonControl\",",
+            "INP_Integer = false,",
+            "BTNCS_Execute = [[",
+            "os.execute('open \"\" \"https://resolvebrowser.co.uk\"')",
+            "os.execute('start \"\" \"https://resolvebrowser.co.uk\"')",
+            "]],",
+            "ICS_ControlPage = \"Controls\"",
+            "},"
+        ],
+        "description": "Website Node"
+    },
+    "Website Button": {
+        "prefix": "btn",
+        "body": [
+            "ScriptButton = InstanceInput { ",
+            "SourceOp = \"XF1\", ",
+            "Source = \"ScriptButton\", ",
+            "Name = \"www.resolvebrowser.co.uk\", ",
+            "Page = \"Controls\", ",
+            "},",
+        ],
+        "description": "Website Button"
+    },
+    "Comment": {
+        "prefix": "com",
+        "body": [
+            "Comments = Input {",
+            "Value = \"Default Font  = Open Sans\\nAccess To 8 Shading Levels\\nSwitch Outro On/Off\",",
+            "},"
+        ],
+        "description": "Comment"
+    },
+    "Playlist": {
+        "prefix": "yt",
+        "body": [
+            "-- This code is for a label in the inspector",
+            "YT1 = InstanceInput { --Enter Label Number",
+            "SourceOp = \"Text1\", --The Node Name the Label is in",
+            "Source = \"YT\", --Same as Label",
+            "Name = \"Tutorials\", -- Label Name",
+            "Page = \"Controls\", --Inspector Page",
+            "},",
+            "-- end of the label"
+        ],
+        "description": "Playlist"
+    },
+    "Node Playlist": {
+        "prefix": "nyt",
+        "body": [
+            "YT = {",
+            "LINKS_Name = \"ScriptButton\",",
+            "LINKID_DataType = \"Number\",",
+            "INPID_InputControl = \"ButtonControl\",",
+            "INP_Integer = false,",
+            "BTNCS_Execute = [[",
+            "os.execute('open \"\" \"https://www.youtube.com/playlist?list=PL8Sqh-MosCdfELV3bGBnhczYXsXbS0at1\"')",
+            "os.execute('start \"\" \"https://www.youtube.com/playlist?list=PL8Sqh-MosCdfELV3bGBnhczYXsXbS0at1\"')",
+            "]],",
+            "ICS_ControlPage = \"Controls\"",
+            "}"
+        ],
+        "description": "Playlist"
+    },
+    "Preset Button": {
+        "prefix": "pbtn",
+        "body": [
+            "Preset$1 = {",
+            "ICD_Width = 0.5,",
+            "LINKS_Name = \"Preset$1\",",
+            "LINKID_DataType = \"Number\",",
+            "INPID_InputControl = \"ButtonControl\",",
+            "INP_Integer = false,",
+            "BTNCS_Execute = \"tool:SetInput('Tile_01_Col_Start', $2)\\n tool:SetInput('Tile_01_Col_End', $3)\\n tool:SetInput('Tile_02_Col_Start', $4)\\n tool:SetInput('Tile_02_Col_End', $5)\\n tool:SetInput('Tile_01_Row_Start', $6)\\n tool:SetInput('Tile_01_Row_End', $7)\\n tool:SetInput('Tile_02_Row_Start',$8)\\n tool:SetInput('Tile_02_Row_End', $9)\" ,",
+            "ICS_ControlPage = \"Controls\"",
+            "},",
+            "$0"
+        ],
+        "description": "Preset Button"
+    },
+    "Preset Label": {
+        "prefix": "lbtn",
+        "body": [
+            "Preset$1 = InstanceInput { ",
+            "SourceOp = \"M1\", ",
+            "Source = \"Preset$1\", ",
+            "Name = \"${2:Name}\", ",
+            "Page = \"Controls\", ",
+            "},",
+            "$0"
+        ],
+        "description": "Preset Label"
+    },
+    "Width Node": {
+        "prefix": "nwidth",
+        "body": [
+            "--line to add width to a control which goes in the user controls section",
+            "ICD_Width = 0.5,"
+        ],
+        "description": "Width Node"
+    },
+    "IndependentLabel": {
+        "prefix": "il",
+        "body": [
+            "IndependentLabel = {",
+            "INPID_InputControl = \"LabelControl\",",
+            "IC_ControlPage = 0,",
+            "LINKS_Name = \"Independent Label\",",
+            "},"
+        ],
+        "description": "IndependentLabel"
+    },
+    "Control Group": {
+        "prefix": "cg",
+        "body": [
+            "IC_ControlGroup = $,"
+        ],
+        "description": "Control Group"
+    },
+    "Control ID": {
+        "prefix": "cid",
+        "body": [
+            "--IC_ControlID is for the 'piece' that you're looking at: 0 for Low, 1 for High.",
+            "--IC_ControlGroup defines a different control. So you'll have two ControlGroups, each with ControlID 0 and 1.",
+            "IC_ControlID = 0,",
+            ""
+        ],
+        "description": "Control ID"
+    },
+    "MinScale": {
+        "prefix": "mins",
+        "body": [
+            "INP_MinScale = -1,",
+            ""
+        ],
+        "description": "MinScale"
+    },
+    "MaxScale": {
+        "prefix": "maxs",
+        "body": [
+            "INP_MaxScale = 5,",
+            ""
+        ],
+        "description": "MaxScale"
+    },
+    "Controls Center": {
+        "prefix": "cs",
+        "body": [
+            "ICD_Center = 1,",
+            ""
+        ],
+        "description": "Controls Center"
+    },
+    "Controls Default": {
+        "prefix": "cd",
+        "body": [
+            "INP_Default = 1,",
+            ""
+        ],
+        "description": "Controls Default"
+    },
+    "Button Width": {
+        "prefix": "bw",
+        "body": [
+            "MBTNCD_ButtonWidth = ${1|1,0.5,0.25,0.33,0.1|}",
+            ""
+        ],
+        "description": "Button Width"
+    },
+    "Open DropDown": {
+        "prefix": "ol",
+        "body": [
+            "Label$1 = Input { Value = 1, },"
+        ],
+        "description": "Open DropDown"
+    },
+    "Set Attribute": {
+        "prefix": "sa",
+        "body": [
+            "-- used in a button execute to set the attributes of tools.",
+            "BTNCS_Execute = \"${1:Input00}:SetAttrs({TOOLB_PassThrough = true})\","
+        ],
+        "description": "Set Attribute"
+    },
+    "Hide Control": {
+        "prefix": "hc",
+        "body": [
+            "-- used in a button execute to set hide tool.",
+            "BTNCS_Execute = \"${1:MacroName.InputNbr}:SetAttrs({INPB_IC_Visible = false})\",",
+            ""
+        ],
+        "description": "Hide Control"
+    },
+    "Show Control": {
+        "prefix": "sc",
+        "body": [
+            "-- used in a button execute to set show tool.",
+            "BTNCS_Execute = \"tool.Gain:SetAttrs({INPB_IC_Visible = true})\"",
+            ""
+        ],
+        "description": "Show Control"
+    },
+    "Expression Label": {
+        "prefix": "el",
+        "body": [
+            "--goes in the node inputs",
+            "Label = Input { Expression = \"iif(Input5 == 1,1,0)\", },"
+        ],
+        "description": "Expression Label"
+    },
+    "Passthrough": {
+        "prefix": "pt",
+        "body": [
+            "PassThrough = true,"
+        ],
+        "description": "Passthrough"
+    },
+    "UCST2Lines": {
   "prefix": "us",
   "body": [
     "UserControls = ordered() {",
@@ -391,238 +626,16 @@
     "LINKID_DataType = \"Text\", ",
     "TEC_Wrap = false, ",
     "INPID_InputControl = \"TextEditControl\", ",
-    "TEC_Lines = 1, ",
-    "LINKS_Name = \"Job Role\", ",
+    "TEC_Lines = 2, ",
+    "LINKS_Name = \"Main Text\", ",
     "INPS_DefaultText = \"PlaceHolder\",",
     "INP_External = false,",
     "INP_Passive = false,",
     "ICD_Width = 1.0,",
-    "}, }"
+    "},",
+    "--End StyleText Box Modifier",
+    "}"
   ],
-  "description": "UserControlStyled"
-},
-"Page": {
-    "prefix": "p",
-    "body": [
-        "Page = \"${1:enter page}\","
-    ],
-    "description": "Page"
-},
-"Name": {
-    "prefix": "n",
-    "body": [
-        "Name = \"${1:Enter Name}\","
-    ],
-    "description": "Name"
-},
-"Website Node": {
-    "prefix": "nbtn",
-    "body": [
-        "ScriptButton = {",
-        "ICD_Width = 1,",
-        "LINKS_Name = \"ScriptButton\",",
-        "LINKID_DataType = \"Number\",",
-        "INPID_InputControl = \"ButtonControl\",",
-        "INP_Integer = false,",
-        "BTNCS_Execute = [[",
-        "os.execute('open \"\" \"https://resolvebrowser.co.uk\"')",
-        "os.execute('start \"\" \"https://resolvebrowser.co.uk\"')",
-        "]],",
-        "ICS_ControlPage = \"Controls\"",
-        "},"
-    ],
-    "description": "Website Node"
-},
-"Website Button": {
-    "prefix": "btn",
-    "body": [
-        
-        "ScriptButton = InstanceInput { ",
-        "SourceOp = \"XF1\", ",
-        "Source = \"ScriptButton\", ",
-        "Name = \"www.resolvebrowser.co.uk\", ",
-        "Page = \"Controls\", ",
-        "},",
-    ],
-    "description": "Website Button"
-},
-"Comment": {
-    "prefix": "com",
-    "body": [
-        "Comments = Input {",
-        "Value = \"Default Font  = Open Sans\\nAccess To 8 Shading Levels\\nSwitch Outro On/Off\",",
-        "},"
-    ],
-    "description": "Comment"
-},
-"Playlist": {
-    "prefix": "yt",
-    "body": [
-        "-- This code is for a label in the inspector",
-        "YT1 = InstanceInput { --Enter Label Number",
-        "SourceOp = \"Text1\", --The Node Name the Label is in",
-        "Source = \"YT\", --Same as Label",
-        "Name = \"Tutorials\", -- Label Name",
-        "Page = \"Controls\", --Inspector Page",
-        "},",
-        "-- end of the label"
-    ],
-    "description": "Playlist"
-},
-"Node Playlist": {
-    "prefix": "nyt",
-    "body": [
-        "YT = {",
-        "LINKS_Name = \"ScriptButton\",",
-        "LINKID_DataType = \"Number\",",
-        "INPID_InputControl = \"ButtonControl\",",
-        "INP_Integer = false,",
-        "BTNCS_Execute = [[",
-        "os.execute('open \"\" \"https://www.youtube.com/playlist?list=PL8Sqh-MosCdfELV3bGBnhczYXsXbS0at1\"')",
-        "os.execute('start \"\" \"https://www.youtube.com/playlist?list=PL8Sqh-MosCdfELV3bGBnhczYXsXbS0at1\"')",
-        "]],",
-        "ICS_ControlPage = \"Controls\"",
-        "}"
-    ],
-    "description": "Playlist"
-},
-"Preset Button": {
-    "prefix": "pbtn",
-    "body": [
-        "Preset$1 = {",
-        "ICD_Width = 0.5,",
-        "LINKS_Name = \"Preset$1\",",
-        "LINKID_DataType = \"Number\",",
-        "INPID_InputControl = \"ButtonControl\",",
-        "INP_Integer = false,",
-        "BTNCS_Execute = \"tool:SetInput('Tile_01_Col_Start', $2)\\n tool:SetInput('Tile_01_Col_End', $3)\\n tool:SetInput('Tile_02_Col_Start', $4)\\n tool:SetInput('Tile_02_Col_End', $5)\\n tool:SetInput('Tile_01_Row_Start', $6)\\n tool:SetInput('Tile_01_Row_End', $7)\\n tool:SetInput('Tile_02_Row_Start',$8)\\n tool:SetInput('Tile_02_Row_End', $9)\" ,",
-        "ICS_ControlPage = \"Controls\"",
-        "},",
-        "$0"
-    ],
-    "description": "Preset Button"
-},
-"Preset Label": {
-    "prefix": "lbtn",
-    "body": [
-        "Preset$1 = InstanceInput { ",
-        "SourceOp = \"M1\", ",
-        "Source = \"Preset$1\", ",
-        "Name = \"${2:Name}\", ",
-        "Page = \"Controls\", ",
-        "},",
-        "$0"
-    ],
-    "description": "Preset Label"
-},
-"Width Node": {
-    "prefix": "nwidth",
-    "body": [
-        "--line to add width to a control which goes in the user controls section",
-        "ICD_Width = 0.5,"
-    ],
-    "description": "Width Node"
-},
-"IndependentLabel": {
-    "prefix": "il",
-    "body": [
-        "IndependentLabel = {",
-        "INPID_InputControl = \"LabelControl\",",
-        "IC_ControlPage = 0,",
-        "LINKS_Name = \"Independent Label\",",
-        "},"
-    ],
-    "description": "IndependentLabel"
-},
-"Control Group": {
-    "prefix": "cg",
-    "body": [
-        "IC_ControlGroup = $,"
-    ],
-    "description": "Control Group"
-},
-"Control ID": {
-    "prefix": "cid",
-    "body": [
-        "--IC_ControlID is for the 'piece' that you're looking at: 0 for Low, 1 for High.",
-        "--IC_ControlGroup defines a different control. So you'll have two ControlGroups, each with ControlID 0 and 1.",
-        "IC_ControlID = 0,",
-        ""
-    ],
-    "description": "Control ID"
-},
-"MinScale": {
-    "prefix": "mins",
-    "body": [
-        "INP_MinScale = -1,",
-        ""
-    ],
-    "description": "MinScale"
-},
-"MaxScale": {
-    "prefix": "maxs",
-    "body": [
-        "INP_MaxScale = 5,",
-        ""
-    ],
-    "description": "MaxScale"
-},
-"Controls Center": {
-    "prefix": "cs",
-    "body": [
-        "ICD_Center = 1,",
-        ""
-    ],
-    "description": "Controls Center"
-},
-"Controls Default": {
-    "prefix": "cd",
-    "body": [
-        "INP_Default = 1,",
-        ""
-    ],
-    "description": "Controls Default"
-},
-"Button Width": {
-    "prefix": "bw",
-    "body": [
-        "MBTNCD_ButtonWidth = ${1|1,0.5,0.25,0.33,0.1|}",
-        ""
-    ],
-    "description": "Button Width"
-},
-"Open DropDown": {
-  "prefix": "ol",
-  "body": [
-    "Label$1 = Input { Value = 1, },"
-  ],
-  "description": "Open DropDown"
-},
-"Set Attribute": {
-  "prefix": "sa",
-  "body": [
-    "-- used in a button execute to set the attributes of tools.",
-    "BTNCS_Execute = \"${1:Input00}:SetAttrs({TOOLB_PassThrough = true})\","
-  ],
-  "description": "Set Attribute"
-},
-"Hide Control": {
-  "prefix": "hc",
-  "body": [
-    "-- used in a button execute to set hide tool.",
-    "BTNCS_Execute = \"${1:Input00}:SetAttrs({INPB_IC_Visible = false})\",",
-    ""
-  ],
-  "description": "Hide Control"
-},
-"Show Control": {
-  "prefix": "sc",
-  "body": [
-    "-- used in a button execute to set show tool.",
-    "BTNCS_Execute = \"tool.Gain:SetAttrs({INPB_IC_Visible = true})\"",
-    ""
-  ],
-  "description": "Show Control"
+  "description": "UCST2Lines"
 }
 }
-
